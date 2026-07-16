@@ -9,7 +9,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "vm" {
 
   admin_ssh_key {
     username   = "xtrauser"
-    public_key = file("C:\Users\Admin/.ssh/id_ed25519")
+    public_key = file("C:.ssh/id_ed25519")
   }
    source_image_reference {
     publisher = "Canonical"
