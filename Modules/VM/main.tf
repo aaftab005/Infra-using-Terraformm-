@@ -9,7 +9,7 @@ resource "azurerm_linux_virtual_machine" "lvm" {
 
     admin_ssh_key {
     username   = "extrauser"
-    public_key = file("D:\\cloudinsider\\TerraformPractice\\tfpractice25062026\\yes.pub")
+    public_key = file("C:\\yes.pub")
   }
   os_disk {
     caching              = "ReadWrite"
