@@ -9,6 +9,9 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- group: Subcription_ID
+
 stages:
   - stage: validation
     displayName: 'Terraform validation'
@@ -28,5 +31,6 @@ stages:
               
               terraform version
         
+
         
         
