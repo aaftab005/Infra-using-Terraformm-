@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-- group: Subcription_ID
+- group: my_subscription
 
 stages:
   - stage: validation
