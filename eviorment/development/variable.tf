@@ -1,3 +1,7 @@
+variable "subscription_id" {
+  description = "Azure Subscription ID"
+  type        = string
+}
 variable "sanew" {
   type = map(object({
     #    saname = string

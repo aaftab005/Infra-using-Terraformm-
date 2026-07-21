@@ -32,7 +32,7 @@ module "nic" {
 }
 
 module "vm" {
-  source  = "../../Modules/vm"
+  source  = "../../Modules/VM"
   vm      = var.vm
   rgcall  = module.rg.rg_details
   niccall = module.nic.nic_details
