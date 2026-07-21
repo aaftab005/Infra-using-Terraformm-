@@ -47,12 +47,12 @@ stages:
     # Terraform Init
     - script: terraform init
       displayName: "Terraform Init"
-      workingDirectory: $(Build.SourcesDirectory)/environment/development
+      workingDirectory: $(Build.SourcesDirectory)/eviroment/development
 
     # Terraform Plan
     - script: terraform plan
       displayName: "Terraform Plan"
-      workingDirectory: $(Build.SourcesDirectory)/environment/development
+      workingDirectory: $(Build.SourcesDirectory)/eviroment/development
       env:
         TF_VAR_subscription_id: $(subscription_id)
 
