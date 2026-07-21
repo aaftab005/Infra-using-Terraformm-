@@ -14,7 +14,7 @@ variables:
 
 stages:
   - stage: validation
-    displayName: 'Terraform validation'
+    displayName: 'Terraform validations'
     jobs:
       - job: terraform
         displayName: 'Terraform Plan'
