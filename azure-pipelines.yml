@@ -44,17 +44,15 @@ stages:
         find $(Build.SourcesDirectory) -maxdepth 3 -type f
       displayName: "Debug Repository"
 
-    # Terraform Init
     - script: terraform init
       displayName: "Terraform Init"
-      workingDirectory: $(Build.SourcesDirectory)/eviroment/development
+      workingDirectory: $(Build.SourcesDirectory)/eviorment/development
 
-    # Terraform Plan
     - script: terraform plan
       displayName: "Terraform Plan"
-      workingDirectory: $(Build.SourcesDirectory)/eviroment/development
+      workingDirectory: $(Build.SourcesDirectory)/eviorment/development
       env:
         TF_VAR_subscription_id: $(subscription_id)
 
-        
+            
         
