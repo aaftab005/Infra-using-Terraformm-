@@ -13,21 +13,48 @@ variables:
 - group: my_subscription
 
 stages:
-  - stage: validation
-    displayName: 'Terraform validations'
-    jobs:
-      - job: terraform
-        displayName: 'Terraform Plan'
-        steps: 
-        - task: TerraformInstaller@1
-          inputs:
-            terraformVersion: 'latest'
-        
-        - script: terraform init
+- stage: validation
+  displayName: "Terraform Validations"
 
-        - script: terraform plan
-          env:
-            TF_VAR_subscription_id: $(subscription_id)
+  jobs:
+  - job: terraform
+    displayName: "Terraform Plan"
+
+    steps:
+
+    # Checkout source code
+    - checkout: self
+
+    # Install Terraform
+    - task: TerraformInstaller@1
+      inputs:
+        terraformVersion: "latest"
+
+    # Debug (Temporary - Remove later)
+    - script: |
+        echo "Current Directory:"
+        pwd
+
+        echo ""
+        echo "Build Sources Directory:"
+        echo $(Build.SourcesDirectory)
+
+        echo ""
+        echo "Repository Structure:"
+        find $(Build.SourcesDirectory) -maxdepth 3 -type f
+      displayName: "Debug Repository"
+
+    # Terraform Init
+    - script: terraform init
+      displayName: "Terraform Init"
+      workingDirectory: $(Build.SourcesDirectory)/environment/development
+
+    # Terraform Plan
+    - script: terraform plan
+      displayName: "Terraform Plan"
+      workingDirectory: $(Build.SourcesDirectory)/environment/development
+      env:
+        TF_VAR_subscription_id: $(subscription_id)
 
         
         
