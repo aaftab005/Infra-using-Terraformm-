@@ -10,10 +10,10 @@ rg = {
 
 sanew = {
     devstorage2941 = {
-    rgkey = dev_rg
+    rgkey = "dev_rg"
     }
     prodstorage2941 = {
-      rgkey = prod_rg
+      rgkey = "prod_rg"
     }
 }
 
@@ -21,13 +21,13 @@ sanew = {
 vnet = {
     vnet1 = {
         name = "devvnet"
-        rgkey = "rg-dev"
+        rgkey = "dev_rg"
         lockey = "East US"
         adrsspc = ["10.1.0.0/16"]
     }
     vnet2 = {
         name = "prodvnet"
-        rgkey = "rg-prod"
+        rgkey = "prod_rg"
         lockey = "West Europe"
         adrsspc = ["10.0.0.0/16"]
     }
