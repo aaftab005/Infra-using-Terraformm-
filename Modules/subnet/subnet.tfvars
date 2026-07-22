@@ -1,4 +1,18 @@
 allsub = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   subnet1 = {
     name = "subnet1"
     rgkey = "dev_rg"
@@ -11,4 +25,5 @@ allsub = {
     vnetkey = "vnet2"
     adrsspc = ["10.1.0.0/24"]
   }
+
 }

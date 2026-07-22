@@ -1,8 +1,8 @@
 rg = {
-    dev_rg = {
+    rg-dev = {
       location = "eastus"
     }
-    prod_rg = {
+    rg-prod = {
     location = "westus"
     }
 }

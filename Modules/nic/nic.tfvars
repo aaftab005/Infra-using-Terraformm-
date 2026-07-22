@@ -1,4 +1,16 @@
 nic = {
+
+
+
+
+
+
+
+
+
+
+
+
     nic1 = {
         name = "devnic"
         nickey = "dev_rg"
@@ -9,4 +21,5 @@ nic = {
         nickey = "prod_rg"
         subnetkey  = "subnet2"      
     }
+
 }
