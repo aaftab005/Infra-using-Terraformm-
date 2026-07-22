@@ -1,14 +1,29 @@
 allsub = {
-    sub1 = {
-        name = "prodsub"
-        rgkey = "rg-prod"
-        vnetkey = "vnet1"
-        adrspre = ["10.1.1.0/24"]
-    }
-    sub2 = {
-        name = "devsub"
-        rgkey = "rg-dev"
-        vnetkey = "vnet2"
-        adrspre = ["10.0.1.0/24"]
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  subnet1 = {
+    name = "subnet1"
+    rgkey = "dev_rg"
+    vnetkey = "vnet1"
+    adrsspc = ["10.1.2.0/24"]
+  }
+   subnet2 = {
+    name = "subnet2"
+    rgkey = "prod_rg"
+    vnetkey = "vnet2"
+    adrsspc = ["10.1.0.0/24"]
+  }
+
 }

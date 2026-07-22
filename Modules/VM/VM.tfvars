@@ -1,12 +1,23 @@
 vm = {
     vm1 = {
-        name = "prodvm"
+
+
+
+
+
+
+
+
+
+
+        name = "devvm"
+        rgkey = "dev_rg"
         nickey = "nic1"
-        rgkey = "rg-prod"
     }
     vm2 = {
-        name = "devvm"
+        name = "prodvm"
+        rgkey = "prod_rg"
         nickey = "nic2"
-        rgkey = "rg-dev"
+
     }
 }

@@ -3,11 +3,7 @@ variable "subscription_id" {
   type        = string
 }
 variable "sanew" {
-  type = map(object({
-    #    saname = string
-    #   saloc = string 
-    rgkey = string
-  }))
+  type = map(any)
 }
 
 variable "rg" {
