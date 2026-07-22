@@ -34,6 +34,7 @@ module "nic" {
 module "VM" {
   source  = "../../Modules/VM"
   vm      = var.vm
+  ssh_public_key = var.ssh_public_key
   rgcall  = module.rg.rg_details
   niccall = module.nic.nic_details
 }
