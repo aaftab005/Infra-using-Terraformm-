@@ -32,4 +32,5 @@ jobs:
         working-directory: ./eviorment/development
         env:
           TF_VAR_subscription_id: ${{ vars.SUBSCRIPTION_ID }}
+          TF_VAR_ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
         run: terraform plan

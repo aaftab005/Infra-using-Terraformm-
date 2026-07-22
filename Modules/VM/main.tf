@@ -9,7 +9,7 @@ resource "azurerm_linux_virtual_machine" "lvm" {
 
     admin_ssh_key {
     username   = "extrauser"
-    public_key = file("${path.module}/../../ssh/yes.pub")
+    public_key = var.ssh_public_key
   }
   os_disk {
     caching              = "ReadWrite"
@@ -34,4 +34,8 @@ variable "rgcall" {
 
 variable "niccall" {
   type = map(any)
+}
+
+variable "ssh_public_key" {
+  type = string
 }
