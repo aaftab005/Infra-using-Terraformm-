@@ -34,5 +34,5 @@ jobs:
       - name: Terraform Plan
         working-directory: ./eviorment/development
         env:
-          TF_VAR_subscription_id: ${{ var.subscription_id }}
+          TF_VAR_subscription_id: ${{ vars.subscription_id }}
         run: terraform plan
