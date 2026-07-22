@@ -21,5 +21,5 @@ nic = {
         nickey = "prod_rg"
         subnetkey  = "subnet2"      
     }
->>>>>>> main
+
 }
