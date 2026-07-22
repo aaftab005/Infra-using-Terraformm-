@@ -9,7 +9,7 @@ resource "azurerm_linux_virtual_machine" "lvm" {
 
     admin_ssh_key {
     username   = "extrauser"
-    public_key = file("C:\\yes.pub")
+    public_key = file("${path.module}/../../ssh/yes.pub")
   }
   os_disk {
     caching              = "ReadWrite"
