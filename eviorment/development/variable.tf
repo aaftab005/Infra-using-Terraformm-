@@ -26,3 +26,7 @@ variable "nic" {
 variable "vm" {
   type = map(any)
 }
+
+variable "ssh_public_key" {
+  type = string
+}

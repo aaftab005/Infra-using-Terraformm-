@@ -2,7 +2,16 @@
 .terraform/
 *.tfstate
 *.tfstate.*
-terraform.tfvars
+aks.tfvars
+AGW.tfvars
+nic.tfvars
+rg.tfvars
+sa_output.tfvars
+storage.tfvars
+subnet.tfvars
+VM.tfvars
+vmss.tfvars
+vnet.tfvars
 *.tfplan
 
 # Crash logs
