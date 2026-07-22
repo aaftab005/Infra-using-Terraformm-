@@ -31,7 +31,7 @@ module "nic" {
   subnetcall = module.subnet.subnet_details
 }
 
-module "vm" {
+module "VM" {
   source  = "../../Modules/VM"
   vm      = var.vm
   rgcall  = module.rg.rg_details
