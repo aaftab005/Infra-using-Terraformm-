@@ -1,4 +1,8 @@
 rg = {
-  "rg-dev"  = { location = "East US" }
-  "rg-prod" = { location = "West Europe" }
+    rg-dev = {
+      location = "eastus"
+    }
+    rg-prod = {
+    location = "westus"
+    }
 }

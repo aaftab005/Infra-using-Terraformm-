@@ -1,6 +1,6 @@
 rg = {
   "rg-dev"  = { location = "East US" }
-  "rg-prod" = { location = "West Europe" }
+  "rg-prod" = { location = "westus" }
 }
 
 sanew = {
@@ -23,7 +23,7 @@ vnet = {
   vnet2 = {
     name    = "prodvnet"
     rgkey   = "rg-prod"
-    lockey  = "West Europe"
+    lockey  = "West westus"
     adrsspc = ["10.0.0.0/16"]
   }
 }
